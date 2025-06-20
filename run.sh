@@ -1,4 +1,5 @@
-today=`date -u "+%Y-%m-%d"`
+# today=`date -u "+%Y-%m-%d"`
+today='2025-00-00'
 cd daily_arxiv
 # scrapy crawl arxiv -o ../data/${today}.jsonl
 
