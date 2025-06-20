@@ -51,11 +51,13 @@ def main():
         SystemMessagePromptTemplate.from_template(system),
         HumanMessagePromptTemplate.from_template(template=template)
     ])
+    print("--->prompt:", prompt_template)
 
     chain = prompt_template | llm
 
     for idx, d in enumerate(data):
         try:
+            print("--->summary", d['summary'])
             response: Structure = chain.invoke({
                 # "language": language,
                 "content": d['summary']
