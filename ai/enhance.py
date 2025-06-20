@@ -70,12 +70,11 @@ def main():
                  "result": "Error",
                  "conclusion": "Error"
             }
-        time.sleep(5)    # rpm < 60/5
-      
         with open(args.data.replace('.jsonl', f'_AI_enhanced_{language}.jsonl'), "a") as f:
             f.write(json.dumps(d) + "\n")
 
         print(f"Finished {idx+1}/{len(data)}", file=sys.stderr)
+        time.sleep(5)
 
 if __name__ == "__main__":
     main()
