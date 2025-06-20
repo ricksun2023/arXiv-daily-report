@@ -57,7 +57,7 @@ def main():
     for idx, d in enumerate(data):
         try:
             response: Structure = chain.invoke({
-                "language": language,
+                # "language": language,
                 "content": d['summary']
             })
             d['AI'] = response.model_dump()
