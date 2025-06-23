@@ -226,8 +226,6 @@ You can modify it in `.github/workflows/run.yml`
 
 [2025-03-18](data/2025-03-18.md)
 
-[2025-00-00](data/2025-00-00.md)
-
 # Related tools
 - ICML, ICLR, NeurIPS list: https://dw-dengwei.github.io/OpenReview-paper-list/index.html
 
